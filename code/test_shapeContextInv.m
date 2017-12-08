@@ -16,7 +16,7 @@
 %buildAnglesRel takes much longer than buildAngles. 
 
 %Rotate the shape a little big, this will also cause some different scaling
-I1 = imread('.\fish\bw_fish5.png');
+I1 = imread('..\data\bw_fish5.png');
 I1 = imrotate(I1,-20);
 BW1 = imbinarize(I1);
 C1 = bwboundaries(BW1,4); 

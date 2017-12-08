@@ -16,13 +16,13 @@ function [ assignment, cost ] = shapeContext( pts1, pts2, dist_bin_nb, angle_bin
 %              cost - Earth Mover's Distance cost computer with Hungarian algo. 
 
 % Example:
-% I1 = imread('.\fish\bw_fish5.png');
+% I1 = imread('..\data\bw_fish5.png');
 % BW1 = imbinarize(I1);
 % C1 = bwboundaries(BW1,4); 
 % C1 = C1{1};
 % C1 = C1(1:5:end,:); 
 % 
-% I2 = imread('.\fish\bw_fish5.png');
+% I2 = imread('..\data\bw_fish5.png');
 % BW2 = imbinarize(I2);
 % C2 = bwboundaries(BW2,4); 
 % C2 = C2{1};

@@ -13,13 +13,13 @@
 % The Software is provided "as is", without warranty of any kind.
 
 %Without dummy nodes
-I1 = imread('.\fish\bw_fish1.png');
+I1 = imread('..\data\bw_fish1.png');
 BW1 = imbinarize(I1);
 C1 = bwboundaries(BW1,4); 
 C1 = C1{1};
 C1 = C1(1:5:end,:); 
 
-I2 = imread('.\fish\bw_fish1_occ.png');
+I2 = imread('..\data\bw_fish1_occ.png');
 BW2 = imbinarize(I2);
 C2 = bwboundaries(BW2,4); 
 C2 = [C2{1};C2{2}]; %Two boundaries
@@ -39,13 +39,13 @@ vizSC(C1,C2,assign,'Occlusion without dummy nodes');
 
 
 %With dummy nodes
-I1 = imread('.\fish\bw_fish1.png');
+I1 = imread('..\data\bw_fish1.png');
 BW1 = imbinarize(I1);
 C1 = bwboundaries(BW1,4); 
 C1 = C1{1};
 C1 = C1(1:5:end,:); 
 
-I2 = imread('.\fish\bw_fish1_occ.png');
+I2 = imread('..\data\bw_fish1_occ.png');
 BW2 = imbinarize(I2);
 C2 = bwboundaries(BW2,4); 
 C2 = [C2{1};C2{2}]; %Two boundaries

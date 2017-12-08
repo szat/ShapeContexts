@@ -10,6 +10,7 @@ for i=1:n
 end
 D = D/2;
 
+%Without a loop: seems slower!?
 % m = size(X,1);
 % n = size(Y,1);
 % Xrep = kron(X,ones(n,1));

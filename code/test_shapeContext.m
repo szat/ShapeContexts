@@ -13,13 +13,13 @@
 % The Software is provided "as is", without warranty of any kind.
 
 %Sanity check, same shape twice
-I1 = imread('.\fish\bw_fish5.png');
+I1 = imread('..\data\bw_fish5.png');
 BW1 = imbinarize(I1);
 C1 = bwboundaries(BW1,4); 
 C1 = C1{1};
 C1 = C1(1:5:end,:); 
 
-I2 = imread('.\fish\bw_fish5.png');
+I2 = imread('..\data\bw_fish5.png');
 BW2 = imbinarize(I2);
 C2 = bwboundaries(BW2,4); 
 C2 = C2{1};
@@ -38,13 +38,13 @@ assign(:,assign(2,:) > length(C2)) = [];
 vizSC(C1,C2,assign,'Sanity Check: same shape');
 
 %Different shapes
-I1 = imread('.\fish\bw_fish4.png');
+I1 = imread('..\data\bw_fish4.png');
 BW1 = imbinarize(I1);
 C1 = bwboundaries(BW1,4); 
 C1 = C1{1};
 C1 = C1(1:5:end,:); 
 
-I2 = imread('.\fish\bw_fish5.png');
+I2 = imread('..\data\bw_fish5.png');
 BW2 = imbinarize(I2);
 C2 = bwboundaries(BW2,4); 
 C2 = C2{1};
